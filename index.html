@@ -1,1 +1,63 @@
-dd
+<!DOCTYPE html>
+<html lang="en">
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Recurring Deposit Calculator</title>
+
+<head>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  
+ 
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="menu">
+        <div class="menu-item active">Recurring Deposit Calculator</div>  
+  </div>
+    <!-- <div class='ac b'>Recurring Deposit Calculator</div> -->
+    <div class="input-grp">
+        <label>Monthly Investment <span class="required">*</span></label>
+        <input type="text" id="principal" placeholder="Ex : 1000" autocomplete="off">
+    </div>
+    <div class="input-grp">
+        <label>Interest Rate (in %) <span class="required">*</span></label>
+        <input type="text" id="rate" placeholder="Ex : 10" autocomplete="off">
+    </div>
+    <div class="input-grp">
+        <label>Interest Compounding  <span class="required">*</span></label>
+        <input type="text" id="ci" placeholder="Ex : Quarterly = 1" autocomplete="off">
+        <!-- <select id="ci"> <option value=12>Monthly
+          <option value=4 selected>Quarterly
+          <option value=2>Half Yearly
+          <option value=1>Yearly</select> -->
+    </div>
+    <div class="input-grp">
+        <label> Period (Month) <span class="required">*</span></label>
+        <input type="text" id="time"placeholder="Ex : 1">
+    </div>
+
+    <div class="btn-wrapper">
+      
+        <button type=button onclick=rdmaturity(); class="btn">Submit</button>
+    </div>
+    <div class="result">
+      <div class="input-grp ">
+        <strong>Maturity Value:</strong>
+        <!-- <span class="total-amount"><input id=mv></span> -->
+        <input type="text" id="mv"placeholder="Result">
+      </div>
+    </div>
+  
+</div>
+  <script src="main.js"></script>
+</body>
+
+</html>
